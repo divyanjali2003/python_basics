@@ -56,16 +56,80 @@ list1=["red","rose","black","white","blue"]
 #     print("join([str(element) for element in row])")     
 
 
-a = [[1,2],[2,3],[7,9]]
+# a = [[1,2],[2,3],[7,9]]
+# a1= [[0, 0, 0], [0, 0, 0]]
+# for i in range (len (a)):
+#     for j in range (len (a[0])):
+#         a1 [j][i] = a [i][j]
+# for r in a1:
+#   print (r)
 
-a1= [[0, 0, 0], [0, 0, 0]]
+# class string1:
+#     def __init__(self,str1):
+#         self.str1=str1
+#     def input_str3(self):
+#         self.str1=input("enter a string:")
+#     def output_str4(self):
+#         print ("string is:")
+#         print(self.str1)
+# a=string1()
+# a.input_str3()
+# a.output_str4()
 
-for i in range (len (a)):
+# class String1:
+#     def __init__(self, str1=""):
+#         self.str1 = str1
+#     def input_string(self):
+#         self.str1 = input("Enter a string:")
+#     def output_string(self):
+#         print("String is:")
+#         print(self.str1)
+# a = String1()
+# a.input_string()
+# a.output_string()
 
-              for j in range (len (a[0])):
+# class company:
+#     def __init__(self,name, salary):
+#         self.name=name
+#         self.salary=salary
+#     def employe(self):
+#         print(self.name,self.salary)
+# x=company("Divya",2000000)
+# x.employe()
 
-                             a1 [j][i] = a [i][j]
+# class circle:
+#     def __init__(self,radius):
+#         self.radius=radius
+#     def area(self):
+#         return self.radius**2*3
+#     def distance(self):
+#         return self.radius*2*3
+# circle1=circle(4)
+# print(circle1.area())
+# print(circle1.distance)
 
-for r in a1:
+class BankAccount:
+    def __init__(self,account_number,balance):
+        self.__account_number=account_number
+        self.__balance=balance
+    def _display_balance(self):
+        print("balance:",self.__balance)
+b=BankAccount(1234567890,5000)
+b._display_balance()
 
-              print (r)
+class Shape:
+    def __init__(self):
+        self.area_value=0
+    def area(self):
+        print(f"Area of the shape:")
+class Square(Shape):
+    def __init__(self, length):
+        super().__init__() 
+        self.length = length
+        self.area_value = self.length**2
+    def area(self):
+        print(f"Area of the square:")
+shape = Shape()
+shape.area()
+square = Square(5)
+square.area()
